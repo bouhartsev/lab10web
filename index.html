@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Weblab 10</title>
+
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" type="text/javascript"></script>
+</head>
+
+<body onload="draw()">
+    <noscript>Your browser doesn't support our game.</noscript>
+
+    <h1>Крестики-нолики</h1>
+
+    <h2>Правила игры</h2>
+    <b>Правила хода:</b>
+	<p>Игроки ходят по очереди, один за другим.
+	Первым ходит игрок, который играет за крестик.
+	Текущий игрок совершает ход в любую из не занятых клеток.</p>
+	<b>Правила выигрыша:</b>
+	<p>Выигрывает тот игрок, символы которого образовали линию (горизонтальную, вертикальную, диагональную) из трёх символов.
+	Ничья назначается в случае, когда всё игровое поле заполнено и при этом невозможно назначить победителя.</p>
+	<b>Ограничения:</b>
+	<p>Игрок не может совершить ход в клетку, в которой уже находится его символ или символ другого игрока.
+	Нельзя продолжать совершать ходы после назначения ничьей или победителя.</p>
+
+	<h2>Количество побед</h2>
+	<table>
+		<tr><th>Крестики</th><th>Нолики</th></tr>
+		<tr><td>0</td><td>0</td></tr>
+	</table>
+
+	<h2>Ход</h2>
+	<p class="step">Крестики</p>
+
+	<canvas id="tictactoe" width="2100" height="2100" onclick="canvas_click(event)">
+		Your browser doesn't support our game!
+	</canvas>
+</body>
+</html>
