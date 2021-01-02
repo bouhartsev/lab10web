@@ -80,6 +80,7 @@ function draw_empty() {
 		ctx.strokeStyle = "black";
 		ctx.fillStyle = "black";
 		ctx.font = "600pt Comic Sans MS";
+		ctx.font = "600pt 'Comic Sans MS'";
 
 		var px = Math.floor(canvas.width/150);
 		ctx.lineWidth = Math.floor(canvas.width/150);
